@@ -17,34 +17,181 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    	
+    body{
+    	padding-top: 50px; 
+    	position: relative;
+    }
+
+    #presentation{
+    	background-color: #303841; 
+    	color: white;
+    	margin-bottom: 0px;
+    }
+
+    #CV {
+    	background-color: #eeeeee;
+    	margin-bottom: 0px; 
+
+    }
+    #centresInteret{
+    	background-color:#00adb5 ; 
+    	margin-bottom: 0px;
+    }
+    footer{
+    	background-color: #ff5722; 
+    	margin-bottom: 0px; 
+    }
+    
+    .carousel .item {
+    height: 350px; 
+    min-width: 100%;
+	}
+    
+
     </style>
+    
 </head>
-<body>
+<!--scrollspy a vérifier-->
+<body id="page-top" data-spy="scroll" data-target="#navbar">
 	<!--header-->
 	<header>
-		
+		<!--Menu de navigation-->
+		<div id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	        <div class="container">
+	          <div class="navbar-header">
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="#page-top">Cécile Peyras</a>
+	          </div>
+	          <div class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav">
+	              <li class="hidden "><a href="#page-top"></a></li>
+	              <li><a href="#presentation">Présentation</a></li>
+	              <li><a href="#CV">CV</a></li>
+	              <li><a href="#centresInteret">Centres d'intérets</a></li>
+	            </ul>
+	          </div>
+        	</div>
+      	</div>   
 	</header>
 	<!--section 1 : Titre et courte présentation-->
-	<section>
-		
+	<section id="presentation" class="row jumbotron ">
+		<div class="container">
+		<h2><strong>Reconversion vers le métier de développeuse</strong></h2>
+		<p>Après plus de 10 années à excercer le métier de logiticienne transport international, j'ai décidé de me reconvertir dans un domaine qui m'a toujours attirée. Motivée et déterminée, j'ai commencé à me former par moi-même. Je suis acutellement en recherche d'une formation pour aller plus loin dans mes connaissances. J'envisage de commencer d'ici quelques mois.</p>
+		</div>
 	</section>
 	<!--section 2 : CV-->
-	<section>
+	<section id="CV" class="row jumbotron">
+		<div class="container">
+			<h2><strong>Compétences</strong></h2>
+			<p><strong>Langue :</strong> Anglais courant</p>
+			<p><strong>Langages informatiques :</strong>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Javascript</li>
+					<li>JQuery</li>
+					<li>Bootstrap</li>
+				</ul></p>
+			<h2><strong>Expériences Professionnelles</strong></h2>
+			<p>Adjointe responsable logistique Millenis (depuis 2016) </br><I><font size="-1">Société de négoce agro-alimentaire</font></I></p>
+			<div id=ctn1>
+				<button type="button" id="btn1" class="btn btn-dark">Cliquez pour plus de détails</button>
+			</div>
+			<ul id="exp1">
+				<li><strong>Management du service (4 personnes) en l’absence de la responsable (depuis 2016)</strong></li>
+				<li><strong>Suivi des commandes clients et organisation des approvisionnements (+ de 150 000T à l'année / 7000 saisies)</strong></li>
+				<li><strong>Gestion des litiges</strong></li>
+				<li><strong>Négociation avec les partenaires transports</strong></li>
+			</ul>
+			<p>Logisiticienne, Millenis, 2011-2016</p>
+			<div id="ctn2">
+				<button type="button" id="btn2" class="btn btn-dark">Cliquez pour plus de détails</button>
+			</div>
+			<ul id="exp2"><strong>
+				<li>Saisie des commandes</li>
+				<li>Négociation avec les partenaires transports</li>
+				<li>Responsable de l'activité liquide (40 000T par an)</li>
+			</strong></ul>
+			<p>Expériences précédentes : divers postes d'assistantes import ou export</p>
+			<h2><strong>Cursus</strong></h2>
+			<p>Master Commerce International, <I>IAE Poitiers, 2005</I></p>
+			<p>Maitrise LEA anglais/chinois, <I>Université de La Rochelle</I></p>
+				<ul>
+					<li><strong>Echange universitaire de 6 mois à l'université de Wuhan, Chine, 2001</strong></li>
+					<li><strong>Echange universitaire de 6 mois à l'Insitut des minorités du Guangxi, Nanning, Chine, 2002</strong></li>
+					<li><strong>Stage d'assistante export de 6 mois, Maoshi, Nanning Chine 2002</strong></li>
+				</ul>
+		</div>
 		
 	</section>
 	<!--section 3 : centre d'intérêts : écologie, implication dans l'autisme, passion de la Chine -->
-	<section>
+	<section id="centresInteret" class="row jumbotron">
+		<div class="container">
+		<h2><strong>Centres d'intérêts</strong></h2>
+			<div class="carousel slide col-md-6 col-md-offset-3" id="carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active"><img src="autisme.jpg">
+						<h3 class="carousel-caption">Engagement dans l'autisme :</br> membre du CA d'Autisme 44</h3></div>
+					<div class="item"><img src="ecologie.png">
+						<h3 class="carousel-caption" style="color : black">Adepte du minimalisme et de l'écologie</h3></div>
+					<div class="item"><img src="chine.jpg">
+						<h3 class="carousel-caption">Passion pour l'Asie</h3></div>
+				</div>	
+			</div>
+		</div>
 		
 	</section>
 	<!--footer : coordonnées-->
-	<footer>
-		
+	<footer class="row">
+		<div class="text-center">
+		<p><strong>Cécile Peyras - 06 15 41 51 96 - </strong><a type="button"  class="btn btn-primary btn-linkedin btn-sm" href="https://www.linkedin.com/in/c%C3%A9cile-peyras-1647a415/"><i class="fa fa-linkedin fa-fw"></i></a></p>
+		</div>
 	</footer>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Javascript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script >
+    	// Scrollspy fluide
+	     $(function () {
+	        $('li>a').on('click', function(e) {
+	          e.preventDefault();
+	          var hash = this.hash;
+	          $('html, body').animate({
+	            scrollTop: $(this.hash).offset().top
+	          }, 1000, function(){
+	            window.location.hash = hash;
+	          });
+	        });
+	     });
+	     	//class active dans le nav, a etudier ne marche pas
+	     $(function() {
+ 			 $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+		});
+	     //cacher l'expérience et la faire apparaitre en appyant sur le bouton
+	     $(function() {
+	     	$('#exp1').hide()
+	     	$('#btn1').click(function(){
+	     		$('#exp1').show()
+	     		$('#ctn1').remove()
+	     	}); 
+	     	$('#exp2').hide()
+	     	$('#btn2').click(function(){
+	     		$('#exp2').show()
+	     		$('#ctn2').remove()
+	     	}); 
+	     	     }); 
+    </script>
 
 </body>
 </html>
